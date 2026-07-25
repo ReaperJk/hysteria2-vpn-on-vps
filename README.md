@@ -20,7 +20,7 @@
 - Порты 80 и 443 свободны (не заняты nginx/apache и т.п.)
 
 ## Скачивание
-[![Download](https://img.shields.io/badge/Download-install__hysteria2.sh-brightgreen?style=for-the-badge&logo=gnubash)](https://raw.githubusercontent.com/ReaperJk/hysteria2-vpn-on-vps/main/install_hysteria2.sh)
+[![Download](https://img.shields.io/badge/Download-install__hysteria2.sh-brightgreen?style=for-the-badge&logo=gnubash)](https://github.com/ReaperJk/hysteria2-vpn-on-vps/releases/download/v0.1/install_hysteria2.sh)
 
 ## Установка
 - Android:(весь гайд также есть в видео которое я указал в описании, но автор все делает вручную, я автоматизировал)
