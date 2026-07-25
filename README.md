@@ -5,12 +5,12 @@
 
 ## Что делает скрипт
 
-- Устанавливает Hysteria2 и настраивает TLS-сертификат через Let's Encrypt (ACME) по вашему домену
-- Создаёт сайт-заглушку для маскировки трафика под обычный HTTP(S)-сайт
-- Настраивает одного или нескольких пользователей (логин/пароль) для подключения
-- Автоматически создаёт swap-файл, если свободной RAM мало (или спрашивает, если RAM достаточно)
-- Настраивает firewall (ufw): открывает SSH, 80 и 443 порты
-- Опционально: настраивает отправку email-уведомлений через внешний SMTP (Gmail/Yandex/другой), если служба Hysteria2 упадёт
+- Устанавливает Hysteria2 и настраивает TLS-сертификат через Let's Encrypt (ACME) по вашему домену.
+- Создаёт сайт-заглушку для маскировки трафика под обычный HTTP(S)-сайт.
+- Настраивает одного или нескольких пользователей (логин/пароль) для подключения.
+- Автоматически создаёт swap-файл, если свободной RAM мало (или спрашивает, если RAM достаточно).
+- Настраивает firewall (ufw): открывает SSH, 80 и 443 порты.
+- Опционально: настраивает отправку email-уведомлений через внешний SMTP (Gmail/Yandex/другой), если служба Hysteria2 упадёт.
 
 ## Требования
 
@@ -25,8 +25,9 @@
 ## Установка
 
 <details>
-<summary><b>Android</b> (нажми, чтобы развернуть инструкцию)</summary>
-- весь гайд также есть в видео которое я указал в описании, но автор все делает вручную, я автоматизировал
+<summary>
+<b>Android</b> (нажми, чтобы развернуть инструкцию)</summary>
+- весь гайд также есть в видео которое я указал в описании, но автор все делает вручную, а я автоматизировал.
 
 - 1.Арендуйте vps(персональный виртуальный сервер) на одном из сайтов для аренды серверов(советую арендовывать с малоизвестных сайтов). Минимальные требования к серверу:
 Процессор: Intel® Xeon™ 1 vCPU core
@@ -34,11 +35,11 @@
 Диск: 2-3 GB SSD
 OS: Ubuntu 24.04(устанавливайте именно чистую OS, не OS+Control panel)
 
-- 2.Подождите пока сервер развернется и будет активен, пока это происходит зарегестрируйте домен на сайте freedns(https://freedns.afraid.org/), советую сделать короткий домен
+- 2.Подождите пока сервер развернется и будет активен, пока это происходит зарегестрируйте домен на сайте freedns(https://freedns.afraid.org/), советую сделать короткий домен.
  
-- 3.Установите Termux из google play(play market)
+- 3.Установите Termux из google play(play market).
  
-- 4.Скачайте скрипт с данной страницы(https://github.com/ReaperJk/hysteria2-vpn-on-vps/releases/tag/v0.1)
+- 4.Скачайте скрипт с данной страницы(https://github.com/ReaperJk/hysteria2-vpn-on-vps/releases/tag/v0.1).
  
 - 5.Откройте Termux и выполните команды(перед этим убедитесь что скачанный скрипт находится в папке "загрузки"):
  
@@ -47,17 +48,17 @@ pkg install openssh
 termux-setup-storage
 scp ~/storage/downloads/install_hysteria2.sh root@ip вашего сервера:~/
 ```
-- вам потребуется ipv4 и пароль для доступа к серверу(когда вы вводите пароль в терминале он невидим), сервис/сайт для аренды серверов предоставит их вам на домашней странице с настройками сервера или в электронном письме, после выполнения команд выше, выполните следующие команды в терминале:
+- вам потребуется ipv4 и пароль для доступа к серверу(когда вы вводите пароль в терминале он невидим), сервис/сайт для аренды серверов предоставит их вам на домашней странице с настройками сервера или в электронном письме. После выполнения команд выше, выполните следующие команды в терминале:
  
 ```bash
 ssh root@ip вашего сервера
-bash install_hysteria2_v5.sh
+bash install_hysteria2.sh
 ```
-- когда вылезет меню выберите "keep the local version"(или что то типа того) и нажмите enter, если вылезет ошибка по типу "bash: scp: command not found", найдите в интернете что требуется установить, команда установки: "pkg install openssh"
+- когда вылезет меню-выберите "keep the local version"(или что то типа того), нажмите enter, если вылезет ошибка по типу "bash: scp: command not found"-найдите в интернете что требуется установить(команда установки: "pkg install openssh").
  
-- скрипт задаст вопросы: домен, email, логины/пароли пользователей(они нужны для создания конфигов, по которым вы будете подключаться через впн клиент, т.е через сами впн-приложения с кнопкой "подключиться"), порт SSH, и (опционально) настройки email-уведомлений.
+- скрипт попросит указать: домен, email, логины/пароли пользователей(они нужны для создания конфигов, по которым вы будете подключаться через впн клиент, т.е через сами впн-приложения с кнопкой "подключиться"), порт SSH, и (опционально) настройки email-уведомлений.
 
-- 6.Откройте сайт https://hysteriaconfig.xyz, укажите там имя и пароль пользователя, пример :"vpn:67e521c8dac3eac9b2f0fe409b33955b"
+- 6.Откройте сайт https://hysteriaconfig.xyz, укажите там имя и пароль пользователя, пример:"vpn:67e521c8dac3eac9b2f0fe409b33955b".
  
 - 7.Скачайте впн клиент на ядре mihomo, вот список:
 - FlClash—https://github.com/chen08209/FlClash
@@ -72,8 +73,71 @@ bash install_hysteria2_v5.sh
 - AsteriskMETA—https://github.com/Asterisk4Magisk/AsteriskMETA
 - SlClash—https://github.com/songzhengpei/Slclash
 - MikuBox—https://github.com/HatsuneMikuUwU/MikuBoxForAndroid
-- 8.Вставьте туда свой конфиг и переключите прокси на vpb ![Скриншот](./assets/screenshot.png)
+- 8.Вставьте туда свой конфиг и переключите прокси на vpn ![Скриншот](./assets/screenshot.png)
 </details>
+
+<details>
+<summary>
+<b>Windows</b> (нажми, чтобы развернуть инструкцию)</summary>
+- весь гайд также есть в видео которое я указал в описании, но автор все делает вручную,а я автоматизировал.
+ 
+- 1.Арендуйте vps(персональный виртуальный сервер) на одном из сайтов для аренды серверов(советую арендовывать с малоизвестных сайтов). Минимальные требования к серверу:
+Процессор: Intel® Xeon™ 1 vCPU core
+Оперативная память: 500 MB
+Диск: 2-3 GB SSD
+OS: Ubuntu 24.04(устанавливайте именно чистую OS, не OS+Control panel)
+
+- 2.Подождите пока сервер развернется и будет активен, пока это происходит зарегестрируйте домен на сайте freedns(https://freedns.afraid.org/), советую сделать короткий домен.
+- 3.Скачайте скрипт с данной страницы(https://github.com/ReaperJk/hysteria2-vpn-on-vps/releases/tag/v0.1).
+ 
+- 4.Откройте powershell/cmd(командная строка), желательно от имени администратора, предпочтительнее powershell, и выполните команды(перед этим убедитесь что скачанный скрипт находится в папке "загрузки"):
+```powershell
+Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
+scp ~\Downloads\install_hysteria2.sh root@ip_вашего_сервера:~/
+```
+
+```cmd
+scp C:\Users\user\Downloads\install_hysteria2.sh root@ip_вашего_сервера:~/
+```
+
+- вам потребуется ipv4 и пароль для доступа к серверу(когда вы вводите пароль в терминале он невидим), сервис/сайт для аренды серверов предоставит их вам на домашней странице с настройками сервера или в электронном письме. После выполнения команд выше, выполните следующие команды в терминале:
+ 
+```powershell/cmd
+ssh root@ip_вашего_сервера
+bash install_hysteria2.sh
+```
+- когда вылезет меню-выберите "keep the local version"(или что то типа того), нажмите enter, если вылезет ошибка по типу "bash: scp: command not found"-найдите в интернете что требуется установить(команда установки: "pkg install openssh").
+ 
+- скрипт попросит указать: домен, email, логины/пароли пользователей(они нужны для создания конфигов, по которым вы будете подключаться через впн клиент, т.е через сами впн-приложения с кнопкой "подключиться"), порт SSH, и (опционально) настройки email-уведомлений.
+
+- 6.Откройте сайт https://hysteriaconfig.xyz, укажите там имя и пароль пользователя, пример:"vpn:67e521c8dac3eac9b2f0fe409b33955b".
+ 
+- 7.Скачайте впн клиент на ядре mihomo, вот список:
+- Windows
+- sparkle—https://github.com/xishang0128/sparkle
+- clash-verge—https://github.com/MetaCubeX/clash-verge (не поддерживается)
+- clash-verge-rev-https://github.com/clash-verge-rev/clash-verge-rev
+- clash-nyanpasu—https://github.com/keiko233/clash-nyanpasu
+- clashN—https://github.com/2dust/clashN (не поддерживается)
+- v2rayN—https://github.com/2dust/v2rayN
+- clashtui—https://github.com/JohanChane/clashtui
+- GUI.for.Clash—https://github.com/GUI-for-Cores/GUI.for.Clash
+- FlClash—https://github.com/chen08209/FlClash
+- Pandora-Box—https://github.com/snakem982/Pandora-Box
+- ClashMi—https://github.com/KaringX/clashmi (сборка не воспроизводимая)
+- FlyClash—https://github.com/GtxFury/FlyClash
+- Koala Clash—https://github.com/coolcoala/koala-clash
+- Stelliberty—https://github.com/Kindness-Kismet/Stelliberty
+- FlClashX—https://github.com/pluralplay/FlClashX
+- clash-xiaoy—https://github.com/aimy1/clash-xiaoy
+- Bettbox—https://github.com/appshubcc/Bettbox
+- GoclashZ—https://github.com/Zzz-IT/GoclashZ
+- Zephyr—https://github.com/Juwan-Hwang/Zephyr
+- SlothClash—https://github.com/Nemu-x/SlothClash
+- Flowvy-https://github.com/flowvy-proxy/desktop
+</details>
+
+- официальный список впн клиентов от самих разработчиков Mihomo — регулярно обновляется, полная версия всегда доступна на https://wiki.metacubex.one/en/startup/client/client/
 
 ## Дисклеймер
 
