@@ -23,7 +23,10 @@
 [![Download](https://img.shields.io/badge/Download-install__hysteria2.sh-brightgreen?style=for-the-badge&logo=gnubash)](https://github.com/ReaperJk/hysteria2-vpn-on-vps/releases/download/v0.1/install_hysteria2.sh)
 
 ## Установка
-- Android:(весь гайд также есть в видео которое я указал в описании, но автор все делает вручную, я автоматизировал)
+
+<details>
+<summary><b>Android</b> (нажми, чтобы развернуть инструкцию)</summary>
+- весь гайд также есть в видео которое я указал в описании, но автор все делает вручную, я автоматизировал
 
 - 1.Арендуйте vps(персональный виртуальный сервер) на одном из сайтов для аренды серверов(советую арендовывать с малоизвестных сайтов). Минимальные требования к серверу:
 Процессор: Intel® Xeon™ 1 vCPU core
@@ -70,6 +73,7 @@ bash install_hysteria2_v5.sh
 - SlClash—https://github.com/songzhengpei/Slclash
 - MikuBox—https://github.com/HatsuneMikuUwU/MikuBoxForAndroid
 - 8.Вставьте туда свой конфиг и переключите прокси на vpb ![Скриншот](./assets/screenshot.png)
+</details>
 
 ## Дисклеймер
 
