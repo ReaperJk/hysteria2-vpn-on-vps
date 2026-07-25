@@ -73,7 +73,7 @@ bash install_hysteria2.sh
 - AsteriskMETA—https://github.com/Asterisk4Magisk/AsteriskMETA
 - SlClash—https://github.com/songzhengpei/Slclash
 - MikuBox—https://github.com/HatsuneMikuUwU/MikuBoxForAndroid
-- 8.Вставьте туда свой конфиг и переключите прокси на vpn ![Скриншот](./assets/screenshot.png)
+- 8.Вставьте туда свой конфиг и переключите прокси на vpn.
 </details>
 
 <details>
@@ -135,6 +135,7 @@ bash install_hysteria2.sh
 - Zephyr—https://github.com/Juwan-Hwang/Zephyr
 - SlothClash—https://github.com/Nemu-x/SlothClash
 - Flowvy-https://github.com/flowvy-proxy/desktop
+- 8.Вставьте туда свой конфиг и переключите прокси на vpn.
 </details>
 
 - официальный список впн клиентов от самих разработчиков Mihomo — регулярно обновляется, полная версия всегда доступна на https://wiki.metacubex.one/en/startup/client/client/
