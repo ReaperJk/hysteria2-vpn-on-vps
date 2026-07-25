@@ -19,6 +19,13 @@
 - Домен, у которого A-запись уже указывает на IP сервера
 - Порты 80 и 443 свободны (не заняты nginx/apache и т.п.)
 
+## Скачивание
+[
+
+![Download](https://img.shields.io/badge/Download-install__hysteria2.sh-green?style=for-the-badge&logo=gnubash)
+
+](https://raw.githubusercontent.com/ReaperJk/hysteria2-vpn-installer/main/install_hysteria2.sh)
+
 ## Установка
 - Android:(весь гайд также есть в видео которое я указал в описании, но автор все делает вручную, я автоматизировал)
 
@@ -32,7 +39,7 @@ OS: Ubuntu 24.04(устанавливайте именно чистую OS, не
  
 - 3.Установите Termux из google play(play market)
  
-- 4.Скачайте скрипт с данной страницы()
+- 4.Скачайте скрипт с данной страницы(https://github.com/ReaperJk/hysteria2-vpn-on-vps/releases/tag/v0.1)
  
 - 5.Откройте Termux и выполните команды(перед этим убедитесь что скачанный скрипт находится в папке загрузки):
  
